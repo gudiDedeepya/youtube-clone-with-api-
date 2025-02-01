@@ -1,0 +1,405 @@
+*{margin: 0;
+padding: 0;
+font-family: 'Fira sans',sans-serif;
+}
+body{
+position:relative;
+background-color: #181818;
+color: white;
+}
+a{
+text-decoration: none;
+color: black;
+}
+i{
+cursor: pointer;
+}
+img{
+cursor:pointer;
+}
+.flexbox{
+display: flex;
+align-items: center;
+}
+header {
+background-color: #0f0f0f;
+height: 60px;
+padding: 10px 2%;
+justify-content: space-between;
+position:sticky;
+top: 0;
+z-index:8;
+display: flex;
+}
+
+.fa-solid.fa-bars {
+font-size: 24px;
+margin-right: 30px;
+color: white;
+}
+
+.fa-brands.fa-youtube {
+font-size: 24px;
+color: red;
+}
+
+.left-part span {
+color: white;
+font-weight: 600;
+margin-left: 4px;
+}
+
+.center-part {
+flex-grow: 1;
+justify-content: center;
+}
+
+.center-part .search-bar {
+/* display: flex;
+align-items: center; */
+border: 1px solid #303030;
+background-color: #121212;
+margin-right: 10px;
+width: 500px;
+height: 40px;
+border-radius: 20px;
+}
+
+.center-part .search-bar input {
+flex-grow: 1;
+background-color: transparent;
+border: none;
+padding: 10px;
+font-size: 16px;
+color: white;
+outline: none;
+}
+
+.center-part .search-bar .search-btn {
+width: 50px;
+height: 100%;
+background-color: #303030;
+border: none;
+font-size: 18px;
+color: white;
+border-radius: 0 20px 20px 0;
+cursor: pointer;
+}
+
+.center-part .mic-icon {
+font-size: 20px;
+padding: 10px;
+background-color: #303030;
+border-radius: 50%;
+color: white;
+}
+
+.right-part i {
+font-size: 24px;
+margin-right: 20px;
+color: white;
+}
+
+.side-bar{
+height: 100vh;
+width:15%;
+background-color: #000000;
+position: fixed;
+left:0;
+top:80px;
+padding-top: 0;
+white-space: nowrap;
+overflow-y: scroll;
+}
+.side-bar .menu-item{
+padding:8px;
+margin:1%;
+
+}
+.side-bar i{
+font-size: 22px;
+padding:10px;
+width:40px;
+}
+.side-bar .menu-item:hover{
+background-color: #d4d4d4;
+cursor:pointer;
+
+}
+hr{
+border:0;
+border-bottom: 1px solid #d4d4d4;
+margin:15px 0;
+}
+::-webkit-scrollbar{
+width:6px;
+}
+::-webkit-scrollbar{
+background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+background-color: #bbbbbb;
+border-radius: 10px;
+}
+.resize-sidebar{
+width:5%;
+}
+.video-container{
+padding:20px 1% 20px 16%;
+}
+.all-videos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-column-gap:15px;
+grid-row-gap:30px ;
+margin-top: 10px;
+
+}
+.single-video .thumb{
+width:100%;
+border-radius:2%;
+
+}
+.single-video .flexbox img{
+border-radius: 50%;
+width:35px;
+margin-right:10px;
+margin-left:5px;
+
+
+}
+.single-video .flexbox{
+align-items: flex-start;
+margin-top: 5px;
+}
+.video-details{
+font-size: 14px;
+color:#6a6a6a;
+
+}
+.video-details a{
+color: #d4d4d4;
+font-weight: 600;
+display:block;
+}
+.widen-video-container{
+padding-left: 6%;
+}
+@media only screen and (max-width:1000px){
+.fa-solid.fa-bars{
+    font-size: 20px;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+.fa-brands.fa-youtube{
+    font-size: 20px;
+}
+.center-part .search-bar{
+    width:fit-content;
+    margin-left: 5%;
+}
+.center-part .search-bar .search-btn{
+    width:25px;
+    font-size: 18px;
+    padding:5px;
+}
+.center-part .mic-icon{
+    display:none;
+}
+.right-part i{
+    display:none;
+
+}
+.right-part .fa-user{
+    display:block;
+    font-family: 20px;
+    margin-right: 4px;
+}
+.side-bar{
+    height: 100%;
+    width:150px;
+}
+.side-bar .menu-item{
+    padding: 2px;
+}
+.side-bar i{
+    font-size: 20px;
+    width: 22px;
+    padding:5px;
+}
+.resize-sidebar{
+    width: 0;
+}
+.video-container{
+    padding:3%;
+}
+}
+/*the video page*/
+.for-video-page{
+padding:1% 1%;
+
+}
+.two-parts{
+display:flex;
+flex-wrap:wrap;
+justify-content: space-between;
+}
+.running-video{
+flex-basis: 66%;
+
+}
+.suggested-videos{
+flex-basis: 32%;
+}
+.running-video video{
+width:100%;
+}
+.running-video .video-info{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+font-size: 16px;
+}
+.video-info p{
+color:#6a6a6a;
+}
+.running-video .video-info i{
+font-size: 18px;
+font-weight: 600;
+padding:8px;
+}
+.running-video .video-info span{
+padding: 2px;
+font-size: 16px;
+}
+.youtuber{
+display:flex;
+align-items: center;
+}
+.youtuber img{
+border-radius: 50%;
+width:45px;
+margin-right: 12px;
+}
+.youtuber p{
+font-size: 18px;
+font-weight: 600;
+}
+.youtuber span{
+color:#6a6a6a;
+}
+.youtuber div{
+flex:0.98;
+}
+.youtuber button{
+outline:0;
+border:0;
+color:white;
+background-color: red;
+padding:10px 25px;
+cursor:pointer;
+font-weight: 500;
+font-size: 16px;
+border-radius: 20px;
+}
+.video-description{
+margin:10px 0;
+padding-left:60px;
+line-height: 25px;
+}
+.video-comments{
+padding-left:2%;
+
+}
+.video-comments span{
+padding:5px;
+font-size: 17px;
+font-weight: 600;
+}
+.add-comments{
+display: flex;
+align-items: center;
+margin: 30px 5px;
+}
+.add-comments img{
+width:40px;
+border-radius: 50%;
+margin-right: 12px;
+}
+.add-comments input{
+width:100%;
+background-color: none;
+font-size: 18px;
+outline: 0;
+border:0;
+border-bottom: 1px solid #d4d4d4;
+}
+.other-comments{
+display:flex;
+align-items: center;
+padding: 5px;
+}
+.other-comments h3{
+font-weight: 600;
+font-size: 16px;
+}
+.other-comments h3 span{
+font-weight: 500;
+font-size:15px;
+color:#6a6a6a;
+
+}
+.other-comments p{
+font-size: 15px;
+padding-top:5px;
+margin-right:22px;
+}
+.other-comments img{
+width: 40px;
+border-radius: 50%;
+margin-right: 12px;
+}
+.react-to-comments{
+display:flex;
+align-items: center;
+font-size: 15px;
+margin: 10px 0;
+}
+.react-to-comments i{
+padding: 0 10px;
+}
+.react-to-comments span{
+font-weight: 500;
+padding: 0 10px;
+}
+.single-suggested-video{
+display:flex;
+justify-content:space-between;
+padding-bottom:5px;
+}
+.single-suggested-video img{
+width:100%;
+border-radius: 2px;
+}
+.single-suggested-video .thumbnail{
+flex-basis: 50%;
+}
+.single-suggested-video .video-details{
+flex-basis: 49%;
+}
+@media only screen and (max-width:1000px){
+.for-video-page{
+    padding:2%;
+}
+.running-video{
+    flex-basis:100%;
+}
+.suggested-videos{
+    flex-basis: 100%;
+}
+.video-info p{
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+}
