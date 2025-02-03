@@ -235,7 +235,6 @@ padding-left: 6%;
 }
 }
 @media only screen and (max-width: 600px) {
-    /* Header adjustments */
     header {
         height: 50px;
         padding: 5px 2%;
@@ -286,12 +285,10 @@ padding-left: 6%;
         font-size: 18px;
         margin-right: 4px;
     }
-
-    /* Sidebar adjustments */
     .side-bar {
         width: 100px;
         height: auto;
-        overflow-y: hidden;
+    
     }
     .resize-sidebar{
         width: 0;
@@ -308,40 +305,13 @@ padding-left: 6%;
         padding: 4px;
     }
 
-    /* Video section */
     .video-container {
         padding: 2%;
     }
 
-    .all-videos {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-gap: 10px;
-    }
-
-    .single-video .thumb {
-        border-radius: 5px;
-    }
-
-    .single-video .flexbox {
-        align-items: center;
-        margin-top: 3px;
-    }
-
-    .single-video .flexbox img {
-        width: 30px;
-        margin-right: 5px;
-    }
-
-    .video-details {
-        font-size: 12px;
-    }
-
-    .video-details a {
-        font-size: 14px;
-    }
-}
+    
+} 
 @media only screen and (max-width: 370px) {
-    /* Header adjustments */
     header {
         height: 45px;
         padding: 4px 2%;
@@ -387,12 +357,10 @@ padding-left: 6%;
         margin-right: 3px;
     }
 
-    /* Sidebar adjustments */
     .side-bar {
         width: 80px;
-        height: auto;
-        overflow-y: hidden;
-        padding: 5px 0;
+        height: 100%;
+        
     }
   .resize-sidebar{
     width: 0;
@@ -407,36 +375,10 @@ padding-left: 6%;
         width: 18px;
         padding: 3px;
     }
-
-    /* Video section */
     .video-container {
         padding: 1%;
     }
+   
 
-    .all-videos {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-        grid-gap: 8px;
-    }
-
-    .single-video .thumb {
-        border-radius: 3px;
-    }
-
-    .single-video .flexbox {
-        align-items: center;
-        margin-top: 2px;
-    }
-
-    .single-video .flexbox img {
-        width: 25px;
-        margin-right: 3px;
-    }
-
-    .video-details {
-        font-size: 10px;
-    }
-
-    .video-details a {
-        font-size: 12px;
-    }
-}
+   
+} 
