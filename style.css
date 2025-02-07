@@ -287,7 +287,8 @@ padding-left: 6%;
     }
     .side-bar {
         width: 100px;
-        height: auto;
+        height: 100%;
+        top:55px;
     
     }
     .resize-sidebar{
@@ -311,7 +312,7 @@ padding-left: 6%;
 
     
 } 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 400px) {
     header {
         height: 45px;
         padding: 4px 2%;
@@ -359,8 +360,12 @@ padding-left: 6%;
 
     .side-bar {
         width: 80px;
-        height: 100%;
-        
+        height: 75%;
+        top:50px;
+    
+    }
+    .side-bar li {
+        margin-bottom:50px;
     }
   .resize-sidebar{
     width: 0;
